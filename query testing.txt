@@ -1,0 +1,4 @@
+select ename,round(nvl(esal+esal*0.05,0),2) 
+as "Salary with 5% bonus" from employee
+
+select e.ename,e.enationality,a.adesignation from employee e,admin a where e.eid=a.eid(+)

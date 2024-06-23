@@ -1,0 +1,54 @@
+INSERT INTO owner (oName, oShare, oType, oContact) VALUES ('John Doe', 50, 'Individual', 'john825@yahoo.com')
+INSERT INTO owner (oName, oShare, oType, oContact) VALUES ('Taylor Swift', 30, 'Individual', 'taylor@gmail.com')
+INSERT INTO owner (oName, oShare, oType, oContact) VALUES ('ABC Corporation', 20, 'Investor', 'info@abc.com');
+
+INSERT INTO club (cName, clicNo, cValuation, cOrigin)
+VALUES ('AIUB FC', '123aiubfc456', 4800000000, 'Dhaka, Bangladesh');
+
+INSERT INTO organization (prtnrName, contStatus, expDate, signingDate, Category, fundDetails, clicNo) VALUES('Addidas','Active',TO_DATE('31-12-2023','DD-MM-YYYY'),TO_DATE('01-01-2023','DD-MM-YYYY'),'Jersy Sponsor', 2000000, '123aiubfc456')
+INSERT INTO organization (prtnrName, contStatus, expDate, signingDate, Category, fundDetails, clicNo) VALUES ('Daraz', 'Active', TO_DATE('31-07-2024', 'DD-MM-YYYY'), TO_DATE('01-07-2023', 'DD-MM-YYYY'), 'Jersy Sponsor', 500000, '123aiubfc456')
+INSERT INTO organization(prtnrName,contStatus,expDate,signingDate,Category,fundDetails, clicNo) VALUES ('NIKE','Pending',TO_DATE('31-12-2025','DD-MM-YYYY'),TO_DATE('01-01-2024','DD-MM-YYYY'),'Kit Sponsor',2500000,'123aiubfc456')
+INSERT INTO organization (prtnrName,contStatus,expDate,signingDate,Category,fundDetails,clicNo) VALUES('Evaly', 'Expired',TO_DATE('01-12-2022', 'DD-MM-YYYY'),TO_DATE('31-12-2022', 'DD-MM-YYYY'), 'Kit Sponsor', 100000, '123aiubfc456')
+
+INSERT INTO owns (oContact, clicNo) VALUES ('john825@yahoo.com', '123aiubfc456') 
+INSERT INTO owns (oContact, clicNo) VALUES ('taylor@gmail.com', '123aiubfc456') 
+INSERT INTO owns (oContact, clicNo) VALUES ('info@abc.com', '123aiubfc456')
+
+insert into league(ligName, ligDiv, cRanking, LigOrigin) VALUES ('UCL (University Club League)', 'Division-1', 1, 'Dhaka, Bangladesh'); 
+insert into league(ligName, ligDiv, cRanking, LigOrigin) VALUES ('PUL (Privet University League)', 'Division-2', 1, 'Dhaka, Bangladesh'); 
+insert into league(ligName, ligDiv, cRanking, LigOrigin) VALUES ('DPL (Dhaka Premiere League)', 'Division-4', 1, 'Dhaka, Bangladesh');
+
+INSERT INTO participates (ligName, clicNo) VALUES ('UCL (University Club League)', '123aiubfc456'); 
+INSERT INTO participates (ligName, clicNo) VALUES ('PUL (Privet University League)', '123aiubfc456');
+INSERT INTO participates (ligName, clicNo) VALUES ('DPL (Dhaka Premiere League)', '123aiubfc456');
+
+INSERT INTO asset (astName, astId, astCate, astQuant, astValue, clicNo) VALUES ('Stadium','AST001','Infrastructure', 1, 1000000, '123aiubfc456');
+INSERT INTO asset (astName, astId, astCate, astQuant, astValue, clicNo) VALUES ('Team Bus', 'AST002', 'Vehicle', 8, 400000, '123aiubfc456');
+INSERT INTO asset (astName, astId, astCate, astQuant, astValue, clicNo) VALUES ('Youth Academy', 'AST003', 'Infrastructure', 2, 650000, '123aiubfc456');
+
+INSERT INTO achievement (achName, achCate, achDesc, achDate, achePlace, clicNo) VALUES ('UCL23', 'UCL Champion', 'Season Champions', TO_DATE('10-06-2023', 'DD-MM-YYYY'), 'AIUB Stadium', '123aiubfc456')
+INSERT INTO achievement (achName, achCate, achDesc, achDate, achePlace, clicNo) VALUES ('DPL19', 'DPL Champion', 'Season RunnerUp', TO_DATE('18-08-2019', 'DD-MM-YYYY'), 'Mirpur Stadium', '123aiubfc456')
+INSERT INTO achievement(achName, achCate, achDesc, achDate, achePlace, clicNo) VALUES ('PUL21', 'PUL Champion', 'Season Champion', TO_DATE('24-03-2021', 'DD-MM-YYYY'), 'Sylhet Stadium', '123aiubfc456')
+
+INSERT INTO employee (eID, eName, eNationality, eJoinDate, eSal, eDOB, ePhnNo, address, clicNo) VALUES ('EMP001', 'Pep Guardiola', 'Spain', TO_DATE('01-01-2019', 'DD-MM-YYYY'), 60000, TO_DATE('18-01-1971', 'DD-MM-YYYY'), '1234567890', 'Koyla Bari, Kuril', '123aiubfc456');
+INSERT INTO employee (eID, eName, eNationality, eJoinDate, eSal, eDOB, ePhnNo, address, clicNo) VALUES ('EMP002', 'E. Haland', 'Norway', TO_DATE('10-06-2022', 'DD-MM-YYYY'), 500000, TO_DATE('21-07-2000', 'DD-MM-YYYY'), '215698741', 'Kuril', '123aiubfc456');
+INSERT INTO employee (eID, eName, eNationality, eJoinDate, eSal, eDOB, ePhnNo, address, clicNo) VALUES ('EMP003', 'J. Alvarez', 'Argentina', TO_DATE('10-06-2022', 'DD-MM-YYYY'), 45000, TO_DATE('31-01-2000', 'DD-MM-YYYY'), '659874231', 'Kuril', '123aiubfc456');
+INSERT INTO employee (eID, eName, eNationality, eJoinDate, eSal, eDOB, ePhnNo, address, clicNo) VALUES ('EMP004', 'Sheikh Mansour', 'UAE', TO_DATE('01-01-2019', 'DD-MM-YYYY'), 100000, TO_DATE('20-11-1970', 'DD-MM-YYYY'), '9876543210', 'Gulshan', '123aiubfc456');
+INSERT INTO employee (eID, eName, eNationality, eJoinDate, eSal, eDOB, ePhnNo, address, clicNo) VALUES ('EMP005', 'Walker', 'England', TO_DATE('20-12-2020', 'DD-MM-YYYY'), 480000, TO_DATE('28-05-1990', 'DD-MM-YYYY'), '1478523690', 'Khilkhet', '123aiubfc456');
+INSERT INTO employee (eID, eName, eNationality, eJoinDate, eSal, eDOB, ePhnNo, address, clicNo) VALUES ('EMP006', 'Tony Book', 'England', TO_DATE('30-06-2021', 'DD-MM-YYYY'), 350000, TO_DATE('04-09-1934', 'DD-MM-YYYY'), '3698521470', 'Banani', '123aiubfc456');
+INSERT INTO employee (eID, eName, eNationality, eJoinDate, eSal, eDOB, ePhnNo, address, clicNo) VALUES ('EMP007', 'Xavier Mancisidor', 'Spain', TO_DATE('01-07-2023', 'DD-MM-YYYY'), 300000, TO_DATE('24-05-1970', 'DD-MM-YYYY'), '7412589630', 'Nikunja', '123aiubfc456');
+INSERT INTO employee (eID, eName, eNationality, eJoinDate, eSal, eDOB, ePhnNo, address, clicNo) VALUES ('EMP008', 'Txiki Begiristain', 'Spain', TO_DATE('29-10-2022', 'DD-MM-YYYY'), 550000, TO_DATE('12-08-1964', 'DD-MM-YYYY'), '9874563210', 'Mirpur', '123aiubfc456');
+INSERT INTO employee (eID, eName, eNationality, eJoinDate, eDOB, address, clicNo) VALUES ('EMP009', 'Jamal Bhuyian', 'Bangladesh', TO_DATE('01- 02-2023', 'DD-MM-YYYY'), TO_DATE('10-04-1990', 'DD-MM-YYYY'), 'Airport', '123aiubfc456');
+INSERT INTO employee (eID, eName, eNationality, eJoinDate, address, clicNo) VALUES ('EMP010', 'Ferran Soriano', 'Spain', TO_DATE('01-09-2022', 'DD-MM-YYYY'),'Uttara', '123aiubfc456');
+
+INSERT INTO player (eID, pNumbeMatch, pContExpDate, pPostion, pJerseyNo, pPhyState) VALUES ('EMP002',35, TO_DATE('30-11-2026', 'DD-MM-YYYY'), 'CF', '09', 'Fit')
+INSERT INTO player (eID, pNumbeMatch, pContExpDate, pPostion, pJerseyNo, pPhyState) VALUES ('EMP005',377, TO_DATE('30-11-2028', 'DD-MM-YYYY'), 'RB', '02', 'Fit')
+INSERT INTO player (eID, pNumbeMatch, pContExpDate, pPostion, pJerseyNo, pPhyState) VALUES ('EMP003',35, TO_DATE('31-12-2027', 'DD-MM-YYYY'), 'ST', '19', 'Fit')
+INSERT INTO player (eID, pNumbeMatch, pContExpDate, pPostion, pJerseyNo, pPhyState) VALUES ('EMP009',101, TO_DATE('31-12-2027', 'DD-MM-YYYY'), 'MF', '06', 'Fit')
+
+INSERT INTO staff (eID, sDept, sDesignation) VALUES ('EMP001', 'Coaching', 'Coach')
+INSERT INTO staff (eID, sDept, sDesignation) VALUES ('EMP007', 'Coaching', 'Goal Keeping Coach')
+
+INSERT INTO admin (eID, aDept, aDesignation) VALUES ('EMP006', 'Board of Director', 'Director') 
+INSERT INTO admin (eID, aDept, aDesignation) VALUES ('EMP004', 'Board of Director', 'President') 
+INSERT INTO admin (eID, aDept, aDesignation) VALUES ('EMP010', 'Management', 'Manager')
