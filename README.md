@@ -17,3 +17,9 @@ Complex queries were executed to validate the integrity and performance of the d
 
 ### Integration with Java
 The database was integrated with a Java application using JDBC (Java Database Connectivity). Apache Tomcat was used as the server to facilitate this integration.
+
+## 📫 Connect
+
+- Email: lutfulkabir1757@gmail.com
+- LinkedIn: [Md. Lutful Kabir](https://www.linkedin.com/in/mdlutfulkabir/)
+- Portfolio: [Md. Lutful Kabir](https://www.datascienceportfol.io/mdlutfulkabir)
